@@ -85,7 +85,7 @@ fun main (args: Array<String>) {
 // Aquí ya tenemos el listado de las rutas
 // Ahora automatizar la estructura sql para añadir las distintas rutas de forma adecuada.
     //Creamos la conexión al archivo sql donde guardaremos los datos de las rutas
-    val url = "jdbc:sqlite:Ruta.sql";
+    val url = "jdbc:sqlite:Rutes.sqlite";
     val con = DriverManager.getConnection(url);
     val strutas = "INSERT INTO RUTES (num_r, nom_r, des, des_ac) VALUES (?, ?, ?,?)";
     val stpuntos = "INSERT INTO PUNTOS(num_r,num_p,nom_p,latitud,longitud) VALUES (?, ?, ?,?,?)";

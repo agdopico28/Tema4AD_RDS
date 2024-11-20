@@ -47,6 +47,7 @@ fun main (args: Array<String>){
     }catch(e: SQLException){
         println("Error al crear la tabla: ${e.message}");
     }finally {
+        st.close();
         con.close();
     }
 }
